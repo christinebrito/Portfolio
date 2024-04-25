@@ -836,8 +836,11 @@ div#about {
         max-width: 75px;
     }
     .about .row {
+        /* display: flex;
+        flex-direction: column-reverse; */
         display: flex;
-        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: flex-end;
     }
     .about .col-md-7 {
         padding: 30px 20px;
@@ -846,10 +849,10 @@ div#about {
         font-size: 10px;
     }
     .about h1 {
-        font-size: 24px;
+        font-size: 20px;
     }
     .about h3 {
-        font-size: 14px;
+        font-size: 11px;
     }
     .about p {
         font-size: 10px;
@@ -868,10 +871,12 @@ div#about {
     .about .profile-img {
         height: 202px;
         width: 170px;
+        margin-left: -30%;
     }
     .col-md-5.text-centre {
-        position: absolute;
-        left: 55%;
+        /* position: absolute; */
+        right: -56%;
+        width: 30%;
     }
     .about a{
         z-index: 10;
@@ -953,16 +958,21 @@ div#about {
     .contact .socials a {
         font-size: 13px;
     }
+    /* .contact a {
+        width: 100%;
+    } */
+    .contact i.bi.bi-cloud-arrow-down-fill {
+        font-size: 16px;
+    }
+    .contact button.btn.btn-primary {
+        width: 173%;
+    }
 
   }
 
 @media (max-width: 320px) {
-    .col-md-5.text-centre {
-        position: absolute;
-        left: 46%;
-    }
     .about p {
-        max-width: 63%;
+        max-width: 70%;
     }
     .skills img {
         width: 3em;
@@ -971,5 +981,20 @@ div#about {
     }
     .skills h3 {
         font-size: 12px;
+    }
+    .about h1 {
+        font-size: 16px;
+    }
+    .about h3 {
+        font-size: 9px;
+    }
+    .about .container-socials {
+        width: 50%;
+        row-gap: 13px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about .profile-img {
+        margin-left: -50%;
     }
   }
