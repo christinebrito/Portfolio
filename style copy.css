@@ -339,7 +339,7 @@ div#about {
 
 .experience .container-img-logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-end;
     padding: 10px;
 }
@@ -455,7 +455,7 @@ div#about {
 /* SKILLS & LANGUAGES SECTION STYLE */
 .skills{
     background-color: #05335D;
-    margin-top: -398px;
+    margin-top: -453px;
     padding: 80px 20px;
     } 
 
