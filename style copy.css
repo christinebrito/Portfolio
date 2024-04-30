@@ -166,7 +166,11 @@ div#about {
     width: 500px;
     object-fit: cover;
     object-position: top;
-    padding-top: 20px;
+    padding-top: 70px;
+    background-color: #05335d40;
+    border-radius: 50% 50% 0 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -300,7 +304,7 @@ div#about {
     font-size: 20px;
     color: #F7F9FF;
     font-family: Verdana;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     }
 
 .experience .container-box h2{
@@ -335,9 +339,9 @@ div#about {
 
 .experience .container-img-logo {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
     padding: 10px;
+    gap: 35px;
+    flex-wrap: wrap;
 }
 
 .experience .container-img-logo .block {
@@ -351,7 +355,24 @@ div#about {
     height: 7em;
     padding-bottom: 10px;
 }
+.experience .col {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    padding: 0 10px 15px 0;
+}
 
+.experience .col1 img {
+    width: 70px;
+    height: 70PX;
+}
+
+.experience .company {
+    background-color: #04111e7d;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
 
 /* CERTIFICATION SECTION STYLE */
 .cert-img{
@@ -442,12 +463,62 @@ div#about {
     height: 20px;
     z-index: 1;
     }
+    .offer img.gif {
+        width: 4rem;
+        height: 100%;
+    }
 
-/* SKILLS & LANGUAGES SECTION STYLE */
-.skills{
+/* Offer section */
+/* .offer{
     background-color: #05335D;
     margin-top: -397px;
     padding: 80px 20px;
+    }  */
+
+.offer .container {
+    display: flex;
+    column-gap: 27px;
+}
+
+.offer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    /* background-color: #05121f; */
+    background-image: linear-gradient(to right, #04101C, #062037);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.offer img.gif {
+    width: 16rem;
+    height: 16rem;
+}
+
+.offer h1 {
+    font-family: Verdana;
+    /* font-weight: bolder; */
+    font-size: 28px;
+    color: #F7F9FF;
+    /* padding-bottom: 50px; */
+    text-align: center;
+}
+
+.offer p {
+    font-size: 16px;
+    color: #F7F9FF;
+    font-family: verdana;
+}
+
+/* SKILLS STYLE */
+.skills{
+    /* background-color: #05335D;
+    margin-top: -397px; 
+    padding: 355px 20px 80px 20px; */
+    background-color: #05335D;
+    margin-top: -641px;
+    padding: 355px 20px 80px 20px;
     } 
 
 .skills h2 {
@@ -657,37 +728,54 @@ div#about {
 }
 
 .contact .profile-img {
-    height: 600px;
+    height: 539px;
     width: 572px;
     object-fit: cover;
     object-position: top;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    background-color: transparent;
+    margin: 0;
+    border-radius: 0;
+    padding-left: 0;
 }
 
 /* FOOTER SECTION STYLE */
 .footer{
     background-color: #05335D;
-    height: 150px;
-    padding-top: 10px;
-    font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
     }
 
-.footer p{
-    color: #FFECCE;
-    font-size: 13px;
+.footer.text-center {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+    padding: 50px 20px;
 }
 
-.footer i{
-    color: #FFECCE;
-}
-
-.footer h6{
-    color: #FFECCE;
-    font-size: 13px;
+.footer h1 {
+    font-size: 20px;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    padding-bottom: 10px;
+}
+
+.footer a {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 100%;
+    margin: 0 .2rem;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 10px 7px 10px;
+}
+
+.footer a:hover {
+    background-color: #ffffff;
+    color: #05335D;
+}
+
+.footer p{
+    font-size: 13px;
+    color: white;
+    margin: 25px 0 -26px 0;
 }
 
 
@@ -727,9 +815,10 @@ div#about {
         width: 200px;
     }
     .profile-img {
-        width: 450px;
-        margin-left: -45px;
+        width: 354px;
+        /* margin-left: -45px; */
         padding-top: 70px;
+        height: 71%;
     }
     .about .col-md-7 {
         padding: 50px 0;
@@ -742,6 +831,13 @@ div#about {
     }
     .about h1 {
         font-size: 40px;
+    }
+    .offer .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .offer h1 {
+        font-size: 18px;
     }
     .skills h1, .certificate h1, .experience .header h1, .contact h1 {
         font-size: 40px;
@@ -776,9 +872,9 @@ div#about {
 /* Tablet styles */
 @media (min-width: 600px) and (max-width: 1000px) {
     .profile-img {
-        width: 434px;
-        margin-left: -89px;
+        width: 265px;
         padding-top: 70px;
+        height: 66%;
     }
     .skills .block {
         padding: 13px;
@@ -794,6 +890,19 @@ div#about {
     }
     div#certificate {
         display: none;
+    }
+    .about .col-md-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .experience .col {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .contact .profile-img {
+        padding-left: 0;
     }
         
   } 
@@ -838,9 +947,30 @@ div#about {
         padding: 6px;
     }
     .about .profile-img {
-        height: 202px;
-        width: 170px;
-        margin-left: -30%;
+        height: 193px;
+        width: 128px;
+        /* margin-left: -30%; */
+        padding-top: 40px;
+    }
+    .offer .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .offer .container {
+        padding-bottom: 50px;
+    }
+    .offer .col {
+        width: 100%;
+    }
+    .offer h1 {
+        font-size: 19px;
+    }
+    .offer p {
+        font-size: 14px;
+    }
+    .offer img.gif {
+        height: 12rem;
     }
     .col-md-5.text-centre {
         right: -56%;
@@ -888,7 +1018,7 @@ div#about {
     }
     .experience .container-box .col1, .experience .container-box .col2 {
         width: 100%;
-        padding: 0 0 15px 0;
+        /* padding: 0 0 15px 0; */
     }
     .experience .container-box h1, .experience .container-box h4 {
         font-size: 15px;
@@ -905,6 +1035,14 @@ div#about {
     .experience .container-img-logo img {
         width: 5em;
         height: 5em;
+    }
+    .experience .company {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .contact .container {
+        display: flex;
+        flex-direction: column;
     }
     .contact .container-block {
         max-width: 100%;
@@ -934,6 +1072,7 @@ div#about {
     }
   }
 
+/* smallest mobile view */
 @media (max-width: 320px) {
     .about p {
         max-width: 70%;
@@ -959,10 +1098,15 @@ div#about {
         flex-wrap: wrap;
     }
     .about .profile-img {
-        margin-left: -50%;
+        height: 158px;
+        width: 96px;
+    }
+    .footer .socials {
+        display: flex;
     }
   }
-
+  
+/* hode certificate on 1000px to smallest */
 @media (min-width: 1000px) {
   div#certificate-mobile {
     display: none;
