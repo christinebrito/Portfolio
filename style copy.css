@@ -517,7 +517,7 @@ div#about {
     margin-top: -397px; 
     padding: 355px 20px 80px 20px; */
     background-color: #05335D;
-    margin-top: -641px;
+    margin-top: -590px;
     padding: 355px 20px 80px 20px;
     } 
 
@@ -665,7 +665,7 @@ div#about {
 }
 
 .contact .col1 {
-    max-width: 40%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -728,8 +728,8 @@ div#about {
 }
 
 .contact .profile-img {
-    height: 539px;
-    width: 572px;
+    height: 600px;
+    width: 439px;
     object-fit: cover;
     object-position: top;
     /* padding-top: 20px; */
@@ -1064,11 +1064,11 @@ div#about {
     .contact i.bi.bi-cloud-arrow-down-fill {
         font-size: 16px;
     }
-    .contact button.btn.btn-primary {
-        width: 173%;
-    }
     div#certificate {
         display: none;
+    }
+    .contact .col1 {
+        max-width: 100%;
     }
   }
 
@@ -1100,9 +1100,6 @@ div#about {
     .about .profile-img {
         height: 158px;
         width: 96px;
-    }
-    .footer .socials {
-        display: flex;
     }
   }
   
