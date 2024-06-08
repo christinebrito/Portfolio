@@ -13,7 +13,7 @@ body{
 /* HEADER SECTION STYLE */
 #header{
         height: 100vh;
-        background: url(https://raw.githubusercontent.com/christinebrito/My_Personal_Website/main/files/images/wallpaper.jpg);  
+        background: url(https://raw.githubusercontent.com/christinebrito/Portfolio/main/files/images/wallpaper.jpg);  
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
@@ -612,7 +612,7 @@ div#about {
 /* CONTACT SECTION STYLE */
 .contact{
     padding: 80px 20px;
-    background: url(https://raw.githubusercontent.com/christinebrito/My_Personal_Website/main/files/images/wp6927395.png);    
+    background: url(https://raw.githubusercontent.com/christinebrito/Portfolio/main/files/images/wp6927395.png);    
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
